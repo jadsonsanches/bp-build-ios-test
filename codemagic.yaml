@@ -1,9 +1,55 @@
 workflows:
   ios-swiftly:
     name: ios-swiftly
+    instance_type: mac_mini
+    max_build_duration: 60
     environment:
       vars:
         APP_STORE_CONNECT_ISSUER_ID: Encrypted(Z0FBQUFBQmhJQXRZM0pnMnRTcWF1QWdZeGpmd09MR2NQbXowbnpKOVN4RmFfcGVOSFRfOWtqMnZtZzdvMXZSdG5YQThjNGhzTFYtX0Y3bnJ3Z1FoTU9OX0lrbV9kOXVnYmZPZGhkSWlwMS1saktSM2Vfd20xZzJQeHZ5Mlk2Y2NoUHNzek5hcmp2Rlg=)
         APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(Z0FBQUFBQmhJQXVMc0FyeGZVNnJtaUNUVi1oY1pXekJwaGJ5bkZPTHZ1WWM0VjhzOFdpRy1XcmRMRmpBb1NIUi1IMkpKNC1Ia1hjYW9RcHdDQ1E2Q3J6WFBxZU54RWJHYkE9PQ==)
         APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(Z0FBQUFBQmhJQXhuaTdwY1NTN3NPdlE4VktrWGVDcVF0bVVGLTNxRVlZVXk5U3NjOFhPSGRsdmJ6M1RkQi0yNVRlTEJ4N0oxVzVuM085eE5hdTVxOXEtaTlPbHNLS29NdldSWDUyVXVnQlpOTWxITmtJeDZUXzg3MkoxNkV4WTlqNmI0Y245UGx5NjJtZVkyTGxVSGt0VUZlcVFnbk1hZGMyRWhTUXc4V28tQnZLMnIyN2J6NU82V1doMHhRUzljaFZINFB5dzdBMDV1MHJDTjNnb0txMXhlUlBZVm5QX3lHWEpJdEFoYmZrU1hTM2RHLUZZY0E4TklMcW5rLXM4TXdTN2hEOXlLSHl6U2JjSlN6YkZQOWE3bWJXSDF3VGZZZ085bnlLTzlDMnVHOHFUSTE2WWpoNnVUb0liUWkwVjRQb0RqZEIwREdQV1F2TXJRMTZaVklVZW83T2NVZlF1eXd1S2FtQlUtemF2TGNlcmpvdE1pNTUzRDYtRjlDbHRYaGZaUE1pR1ZfZW8wUFFDNlJFTExKX1BqNHIwV0NyNElGQXF2UjdmNzFpMmI4aVVvbHN1Y3dLND0=)
         CERTIFICATE_PRIVATE_KEY: Encrypted(Z0FBQUFBQmhJQTJZVWx5N0l0aXN0cldTQXhnekhmbElCUHZWVTI0QTFydWNVck8wR0JidkI1c3Y4RmVwUUs0Yk9ySENEWDhScjFKQnJ1OGVHNnQxTmNCMkV0YkFwX21xVFJLVG1WSk12TnJqdnhodnJOT0lCMVB2VHN0X0ZGdURKbWdKVGxwVWVHV0RmdmpUMTFRdEh3OVZjSGFPUkQ2bEM5NXh5SkN0cGx5Ulc0azJKZmpPRk40ZjJiakd1ZEdESk9tdHV4aUhjekttTDlDUVFIdFFmVGRrbk5oY2ZkVUxLVUNlWDdEY29TZ3NieGZKbldhOGZYZ3h4WVJBRzhHUmIxUnBVWVAtZXJwdEFDcVNjUzBkdzNpZnVMNXBlUjlpdjBFS1MwczRSd3pNR1Vrc1FkM3RvTW5DZUV1c1NLb2V1MWh0aUpFYlBZaFVUekpkbUxvRU93LUlHT2RzUWdPM2tNWHpvYml6ODMtbGtQTTUwNmxVQlZiVGp5dXNzc0hyVXptTkNVWklDN1hGeWdWdmxEbTJFZjhIUm1GZnVEcWY5ZlItaWlmakxEMmtyanFqeW1sQW1hZEZYYUljeDlncXNGcmZ0VjRCWEhGQVFDYkZ6STdndGt0T1hnLTJWZEJ3VTFJdlFURnNlWWpvQjdPTkktTUgtdkRtbVNPbE1hNVprV2pZQ2p4cEZuRHY5MmxkOHp1MUFaTWNMRExzNGVndXIxR0VsX0ltX2JIZTYyUU0yMjI0NDdWbEIyRmgxSjdmSl9lZ3hkY3hpT2NnYWVITjBKZENLQ2ZqWG56R0luNHAwWlBvTDMyR0x0OTVHY2pOTTJhN0FwR1FtdDlkc1BsY2RYU1hqSlBOdzVNTkxDV05aaWxwVk1HeXpRaHM0T3lrWDVrSWgzQXB5Mmw5STN2TV80dXZfQVEwZG0xX3dENXNTTHBoU241ODF5M0JoRldQR0ZCTkZ2MW5XNzUtSkF2RkJ3S3lGcHVYc0FkQ1owcjNOOTV6Y2FRc0c2X1plUE9oXy1zc0JWVDJNVWY4QlNQZHF6dGhBLTNfaVAxTmVYREJVME5pdHFpaGVBdThsWFRFamg0bkVYVVlTSklRV2htMmFWY280dlJXOVI2SHdVWFZiUGUwR3VFLXEtaHZnazF1N0x6T1FrZEFKT3k1TXdnN09ZUDlIRjNqVmpTSGduRE9rOGx0blNDZEYwRmxPU291NHJZVDI0bjNKTXRkNGktQkcwQVBYZDIzMkV2c1dKa3pIU0pKVjc4U015aUhvc3d4YWpXbXlhTU5MT0JxVTdqQWZJNHlfMjNCbEN2UllQWS1aZmxENUJrejFIVEM2S2tRU09ZNW90RTJrb1pycjdOYTctZTZWZWs3eEgxcHYtMl9vV1lheEh5SkNWZ040X2tyZUJyWk0yTlpIV0RIOXhaelFkbno3eXZKNXc3TXZRLXFVRmE0RjFZZkF3MkpucXpJSjFpVDRaeVAzVzN1OFViRGhvM3RNTGNzZy1LdkdZNGpUVlJDWUp6eWY2ZlM3Z1Jab3NlRG1hclNjaHRPSnBFbXlrRkZuYTgtU2VYbXotRkRpdlp5bzdwZ1NtY3E2cTdVN3VmOU1ORVgwQS16R1VNVFNEb2hnOXg5OHVqS1lub3dZdi11TUFjNzZyNzNueC01bmo3Z0JIM2xzRVRqU2JiWmdsNVJlbi1tZ0s5NnJreFk1WllvTENpWDNKSVlYdG1wYjZFTEYtV3dNSzFKQ0x3R0ppeUVadlNqTFV5Qkdnb0RMdkhCeFFVOHowMUJDd0hnLXRvOTVqaUNwNlRzNDN6YWlhQ3dLbFpJTDFIc1lCZVBrWl9oQkRPUVpDVGxYOGk5MGhBaGpOb1F3ZVhIZkc2eF9sb2VNbDFKUEYtZHY3U3NUbUdEXzNJN016anV3WWI5Rmh1RjVfY05oMlJCaUY2Yy1IMTI0WTFjaFJ5dkkyUjlMak40eWVaamlMSTlGdjFCR283VEhZUWdJbXdMN0FaTHdlZnRETEhiZnJNLXNNUl85a2JVV1dZcFBnbThqVWFzN3VsMTdVUVBxNnRBVzBlV2ZUR2tsaUdFcmNrVWwtRzE2RVdPczdlTERYNVdsY1pTcy05WlAtOWEtT2M3RDVWcUtyc053ZWgtMHk5Nzljd1ZFS1JQamtmc2xGS2M0WVNQMGsxZEYwQmRuelA5REtGZWo1TzRRZjZoRHNmQ3ZxV2hhQ1cwYy05dlB6U09rcWFWN2lRNzFpSjZ5cGNOXzFPSTc5MGttc3hDR2N6RkFLOE80aDlfQmlFSVZrUEUwdW5YaDczbmVvemlLd0x0MnAyVVlrWW1FdUh5NUhHNlBuRmY5Wm5OUFR4S00tUVdQWmJRTjFkMzR4dVg2MXA0b1FmZURwYm1RSnR0Q0t5b29vZW5NR1BoT0xnX19LXzZVcTRZVTZxMXpBVzlUWk9SUXJLZlppRWM2SjJ4TmVZY1Y3blJtX0ZQaXQwTVNReVluazlod2FnaWlYY3FMR25fVEZieUNvWlFBaEYxSFQ1V3J2RDg2NWN0blFNVFkzUWY2ZmI2cHg1Z2NrSnJHTzVIOGZCTjRDWjlHTG1xWVBGZ0NuUVZfeVROS0ZUTUQ1QjFHU2N6bGk4VVZfSy11QmFDTUN0bjVYV1lsazFVSVpvM21yUkhpX09XZEJKUEpKV1NjQ1puWUtBRUFuTGcwRGt1RXAwTmUzdFRkeHl5NVE3N0Zta3ZCbW9aZjN0NE9hOVYwM0xiVzNsa3FnbW01WDc0UTM4RXdPS0MwSHJ3eWxoVmtGUW1ycUdkQXM4SVhqNENCQjNUTzMxdDZSeU13TEJCTC1xai1ib0JLbkdNeHVsVXpuWDJ0YkxJUE9iMW9ZdUFpYmRfeFBSNjMyNEJkSy1KQWVDWERoeEtzZVl4U3hQNTNGYVpzUUNDSW9DQkVUMnp5SXhlYnFKSmpYUjJUNVY2azJ2SDFrUEZsWm9QU0xmZ2VtOEpDVnZKS25RYjQyQ09xa0hBZU5KdVlkWmlUelpFWFZJeS0wcllCeUVGaEtNbmhSX3dFblZEM2kwdXA4c3RPRHZ4bFJTcVAtc1ZJOGRO)
+      flutter: stable
+      xcode: latest
+    cache:
+      cache_paths:
+        - ~/.pub-cache
+    # triggering:
+    #   events:
+    #     - push
+    #   branch_patterns:
+    #     - pattern: '*'
+    #       include: true
+    #       source: true
+    #   cancel_previous_builds: false
+    scripts:
+      - name: Set up keychain to be used for code signing using Codemagic CLI 'keychain' command
+        script: keychain initialize
+      - name: Set up Provisioning profiles from environment variables
+        script: |
+          PROFILES_HOME="$HOME/Library/MobileDevice/Provisioning Profiles"
+          mkdir -p "$PROFILES_HOME"
+          PROFILE_PATH="$(mktemp "$PROFILES_HOME"/$(uuidgen).mobileprovision)"
+          echo ${FCI_PROVISIONING_PROFILE} | base64 --decode > "$PROFILE_PATH"
+          echo "Saved provisioning profile $PROFILE_PATH"
+      - name: Set up signing certificate
+        script: |
+          echo $FCI_CERTIFICATE | base64 --decode > /tmp/certificate.p12
+          if [ -z ${FCI_CERTIFICATE_PASSWORD+x} ]; then
+            # when using a certificate that is not password-protected
+            keychain add-certificates --certificate /tmp/certificate.p12
+          else
+            # when using a password-protected certificate
+            keychain add-certificates --certificate /tmp/certificate.p12 --certificate-password $FCI_CERTIFICATE_PASSWORD
+          fi      
+      - name: Set up code signing settings on Xcode project
+        script: xcode-project use-profiles
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+    publishing:
+      email:
+        recipients:
+          - jadson.sanches@gmail.com
+      scripts:
+        - echo 'Post-publish script'
